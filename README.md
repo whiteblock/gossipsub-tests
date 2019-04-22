@@ -4,6 +4,8 @@ This work started last year with [Eth Research](https://github.com/ethresearch/s
 
 Within the following test series, we will be testing libp2p's go implementation of [gossipsub](https://github.com/libp2p/go-libp2p-pubsub/blob/master/gossipsub.go).
 
+Additional testing considerations can be viewed within the [following document](https://hackmd.io/jxR_jnWMRW6Zy9Rgb7kqdg). Please feel free to provide any feedback or commentary and contribute to these efforts however you see fit. 
+
 ## Overview
 The network is segmented into X number of shards. Every ~10 minutes, validators are randomly assigned to a shard, so the stress point is observing and testing the ability of validators to subscribe to new topics and send/receive messages pertaining to this new topic in an adequate amount of time.
 
