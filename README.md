@@ -1,6 +1,8 @@
 # Testing Methodology
 
-This work started with [Eth Research](https://github.com/ethresearch/sharding-p2p-poc).
+This work started last year with [Eth Research](https://github.com/ethresearch/sharding-p2p-poc).
+
+Within the following test series, we will be testing libp2p's go implementation of [gossipsub](https://github.com/libp2p/go-libp2p-pubsub/blob/master/gossipsub.go).
 
 ## Overview
 The network is segmented into X number of shards. Every ~10 minutes, validators are randomly assigned to a shard, so the stress point is observing and testing the ability of validators to subscribe to new topics and send/receive messages pertaining to this new topic in an adequate amount of time.
